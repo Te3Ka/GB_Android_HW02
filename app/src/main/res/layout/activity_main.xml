@@ -8,18 +8,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".MainActivity" />
+        tools:context=".MainActivity">
 
-    <ru.te3ka.homework02.CustomView
-        android:id="@+id/custom_view_01"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:layout_margin="16dp" />
+        <ru.te3ka.homework02.CustomView
+            android:id="@+id/custom_view_01"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_margin="16dp" />
 
-    <ru.te3ka.homework02.CustomView
-        android:id="@+id/custom_view_02"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:layout_margin="16dp" />
-
+        <ru.te3ka.homework02.CustomView
+            android:id="@+id/custom_view_02"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_margin="16dp" />
+    </LinearLayout>
 </ScrollView>

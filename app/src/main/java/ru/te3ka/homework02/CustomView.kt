@@ -7,7 +7,12 @@ import android.widget.LinearLayout
 import ru.te3ka.homework02.databinding.CustomViewPostBinding
 
 
-class CustomView(context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs) {
+class CustomView
+@JvmOverloads constructor(
+    context: Context,
+    attributeSet: AttributeSet? = null,
+    defStyleAttributeSet: Int = 0,
+) : LinearLayout(context, attributeSet, defStyleAttributeSet) {
     private val binding = CustomViewPostBinding.inflate(LayoutInflater.from(context))
 
     init {
@@ -21,6 +26,5 @@ class CustomView(context: Context, attrs: AttributeSet?) : LinearLayout(context,
     fun setBottomText(text: String) {
         binding.bottomText.text = text
     }
-
 }
 
